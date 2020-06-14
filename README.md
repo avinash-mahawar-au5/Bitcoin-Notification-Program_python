@@ -204,3 +204,13 @@ Define some time interval
  # sleeps for 60 min
  time.sleep(60 * 60)
 ```
+
+For formatting the body of SMS  define a function like example
+
+```python
+def formate_body:
+    date=bitcoin_storage['date'].strftime(%d.%m.%Y %H:%M)
+    price=bitcoin_storage['price']
+    row = 'date - {}: , price- ${}'.format(date,price)
+    row.append(row)
+```
