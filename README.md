@@ -222,3 +222,8 @@ To rum your price notification program, execute the folling in your command-line
 ```shell
 $ python bitcoin_notification_app.py
 ```
+
+## Results
+
+#### Email 
+![alt text](https://github.com/avinash-mahawar-au5/Bitcoin-Notification-Program_python/blob/master/Images/Email.png?raw=true)
