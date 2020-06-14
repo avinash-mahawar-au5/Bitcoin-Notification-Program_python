@@ -50,11 +50,44 @@ Now before we move further lets make some IFTTT Applets.
 
 Now this is the important and main part of this application. We need to create two new IFTTT applets: one for emergency Bitcoin price notifications and one for regular updates.
 
+In this project we are going to make below Applets
+1.For send an Email for Emergency notification.
+
+2.For posting on twitter
+
+3.For sending regular SMS having bitcoin price.
+
 ### Emergency bitcoin price notification applet
-1.Choose a 'webhook' and 
 
+#### For E-Mail.
 
+1.Choose a 'webhook' service and slect the 'Recieve a web request' trigger.
 
+2.Name the event 'bitcoin_emergency_email'.
+
+3.For action select 'Email' and choose Send me an email'.
+
+4.Provide the Suject like 'Bitcoin Emergency Price Notification'. Also give the Body like 'Hello, Bitcoin Price goes below your expectation at price : {{Value1}}'. '
+
+#### For Posting Tweets on Twitter.
+
+1.Choose a 'webhook' service and slect the 'Recieve a web request' trigger.
+
+2.Name the event 'bitcoin_emergency_email'.
+
+3.For action select 'Twitter' and choose 'Post a Tweet'. Now connect it via your Twitter account. Once it is connected Create the Action.
+
+4.Provide the Message and 'Finish' it.
+
+### For Regular Bitcoin Upadates.
+
+1.Choose a 'webhook' service and slect the 'Recieve a web request' trigger.
+
+2.Name the event 'regular_bitcoin_updates'.
+
+3.For action select 'Android SMS' and choose 'Send an SMS'.
+
+4.Provide the phone number and type a message 'Hello, Here is currently Bitcoin price at : {{Value1}}'. and create the Applet.
 
 
 
