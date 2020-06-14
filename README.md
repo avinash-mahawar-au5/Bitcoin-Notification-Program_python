@@ -243,3 +243,8 @@ $ python bitcoin_notification_app.py
 
 #### Twitter Post
 ![alt text](https://github.com/avinash-mahawar-au5/Bitcoin-Notification-Program_python/blob/master/Images/Twitter.png?raw=true)
+
+
+#### This is How Bitcoin notification app can be designed using IFTTT.
+
+Deployment
