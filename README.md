@@ -214,3 +214,11 @@ def formate_body:
     row = 'date - {}: , price- ${}'.format(date,price)
     row.append(row)
 ```
+
+## Running a Program
+
+To rum your price notification program, execute the folling in your command-line terminal.
+
+```shell
+$ python bitcoin_notification_app.py
+```
