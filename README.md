@@ -175,3 +175,17 @@ ArgumentParser(prog=None, usage=None, description=None, epilog=None, parents=[],
 ArgumentParser.add_argument(name or flags...[, action][, nargs][, const][, default][, type][, choices][, required][, help][, metavar][, dest])
 ```
 You can Learn [Command Line Parsing](https://docs.python.org/3/library/argparse.html)
+
+###### Now it's time to define some conditions
+
+As we want to get Emergency Notification when the Price of Bitcoin falls below some THRESHOLD_PRICE, we need to define some conditions.
+
+```
+   # For Example
+   
+ if price < BITCOIN_PRICE_THRESHOLD:
+ 
+ # POST a IFTTT webhoook
+         post_ifttt_webhook('bitcoin_price_emergency', price)
+```
+
