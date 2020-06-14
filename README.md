@@ -185,7 +185,23 @@ As we want to get Emergency Notification when the Price of Bitcoin falls below s
    
  if price < BITCOIN_PRICE_THRESHOLD:
  
- # POST a IFTTT webhoook
+ # POST a IFTTT webhoook 'Email'
          post_ifttt_webhook('bitcoin_price_emergency', price)
 ```
 
+Also for regular notification lets make a bundle of 5- 10 notification and send it as SMS.
+
+``python
+bitcoin_storage
+if len(bitcoin_storage) == 5:
+            post_ifttt_webhook('bitcoin_price_update', 
+                               format_bitcoin_history(bitcoin_history))
+```
+
+Define some time interval 
+
+```python
+# sleeps for 60 min
+time.sleep(60 * 60)
+```
+This gives you a buldle of 5 message after every 5 Hours.
