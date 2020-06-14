@@ -150,7 +150,7 @@ def post_ifttt_webhook(event, value):
 
 First we need to use of Command line Parsing as we are using some command line customization for better flexibility.
 
-```
+```python
 import argparse
 ```
 
@@ -158,7 +158,7 @@ This argparser helps as to manage different command line arguments.
 
 ###### Examples
 
-```
+```python
 parser = argparse.ArgumentParser(description='Bitcoin Notifier')
 parser.add_argument('-i', '--interval', type=float, nargs=1,
                         metavar='interval', default=[0.3], help='Time Interval in Minuits.')
@@ -180,7 +180,7 @@ You can Learn [Command Line Parsing](https://docs.python.org/3/library/argparse.
 
 As we want to get Emergency Notification when the Price of Bitcoin falls below some THRESHOLD_PRICE, we need to define some conditions.
 
-```
+```python
    # For Example
    
  if price < BITCOIN_PRICE_THRESHOLD:
