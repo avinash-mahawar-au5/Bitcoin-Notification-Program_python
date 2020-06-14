@@ -79,7 +79,7 @@ In this project we are going to make below Applets
 
 4.Provide the Message and 'Finish' it.
 
-### For Regular Bitcoin Upadates.
+#### For Regular Bitcoin Upadates.
 
 1.Choose a 'webhook' service and slect the 'Recieve a web request' trigger.
 
@@ -90,7 +90,7 @@ In this project we are going to make below Applets
 4.Provide the phone number and type a message 'Hello, Here is currently Bitcoin price at : {{Value1}}'. and create the Applet.
 
 
-### For making a google sheet to record all the bitcoin related notifiction recieved by SMS.
+#### For making a google sheet to record all the bitcoin related notifiction recieved by SMS.
 
 1.Select 'Android SMS' as a service.
 
