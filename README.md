@@ -73,7 +73,7 @@ In this project we are going to make below Applets
 
 1.Choose a 'webhook' service and slect the 'Recieve a web request' trigger.
 
-2.Name the event 'bitcoin_emergency_email'.
+2.Name the event 'bitcoin_emergency_twitter'.
 
 3.For action select 'Twitter' and choose 'Post a Tweet'. Now connect it via your Twitter account. Once it is connected Create the Action.
 
@@ -88,6 +88,19 @@ In this project we are going to make below Applets
 3.For action select 'Android SMS' and choose 'Send an SMS'.
 
 4.Provide the phone number and type a message 'Hello, Here is currently Bitcoin price at : {{Value1}}'. and create the Applet.
+
+
+### For making a google sheet to record all the bitcoin related notifiction recieved by SMS.
+
+1.Select 'Android SMS' as a service.
+
+2.Pass the Keyword ('Bitcoin') by which you want to fetch the SMS and Save it to Google Sheets and create trigger.
+
+3.Choose 'Google sheets' service and 'Add row to spreadsheet' as action.
+
+4.Provie details like Spreadsheet Name 'SMS by match search'. Formatted row and drive folder path.You can leave them as by default has some default vaules.
+
+5.Create an action.
 
 
 
