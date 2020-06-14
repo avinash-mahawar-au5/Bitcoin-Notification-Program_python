@@ -48,7 +48,7 @@ Now before we move further lets make some IFTTT Applets.
 
 ## Creating IFTTT Applets
 
-Now this is the important and main part of this application. We need to create two new IFTTT applets: one for emergency Bitcoin price notifications and one for regular updates.
+Now this is the important and main part of this application. We need to create few new IFTTT applets: one for emergency Bitcoin price notifications and one for regular updates.
 
 In this project we are going to make below Applets
 1.For send an Email for Emergency notification.
@@ -223,13 +223,17 @@ To rum your price notification program, execute the folling in your command-line
 $ python bitcoin_notification_app.py
 ```
 
+# with extra parameters
+
+```
+$ python bitcoin_notification_app.py --interval 0.3 --threshold 10000 --currenct USD
 ## Results
 
 #### Email 
 ![alt text](https://github.com/avinash-mahawar-au5/Bitcoin-Notification-Program_python/blob/master/Images/Email.png?raw=true)
 
 
-#### Googke Sheet
+#### Google Sheet
 ![alt text](https://github.com/avinash-mahawar-au5/Bitcoin-Notification-Program_python/blob/master/Images/Google_Sheet.jpg?raw=true)
 
 #### IFTTT Notification
