@@ -230,4 +230,16 @@ $ python bitcoin_notification_app.py
 
 
 #### Googke Sheet
+![alt text](https://github.com/avinash-mahawar-au5/Bitcoin-Notification-Program_python/blob/master/Images/Google_Sheet.jpg?raw=true)
 
+#### IFTTT Notification
+![alt text](https://github.com/avinash-mahawar-au5/Bitcoin-Notification-Program_python/blob/master/Images/IFTTT.jpeg?raw=true)
+
+#### IFTTT message 
+![alt text](https://github.com/avinash-mahawar-au5/Bitcoin-Notification-Program_python/blob/master/Images/IFTTT_MSG.jpeg?raw=true)
+
+#### SMS over Phone
+![alt text](https://github.com/avinash-mahawar-au5/Bitcoin-Notification-Program_python/blob/master/Images/SMS.jpeg?raw=true)
+
+#### Twitter Post
+![alt text](https://github.com/avinash-mahawar-au5/Bitcoin-Notification-Program_python/blob/master/Images/Twitter.png?raw=true)
