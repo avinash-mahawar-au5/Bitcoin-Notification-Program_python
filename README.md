@@ -191,7 +191,7 @@ As we want to get Emergency Notification when the Price of Bitcoin falls below s
 
 Also for regular notification lets make a bundle of 5- 10 notification and send it as SMS.
 
-``python
+```python
 bitcoin_storage
 if len(bitcoin_storage) == 5:
             post_ifttt_webhook('bitcoin_price_update', 
@@ -201,7 +201,6 @@ if len(bitcoin_storage) == 5:
 Define some time interval 
 
 ```python
-# sleeps for 60 min
-time.sleep(60 * 60)
+ # sleeps for 60 min
+ time.sleep(60 * 60)
 ```
-This gives you a buldle of 5 message after every 5 Hours.
