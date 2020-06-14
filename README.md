@@ -145,3 +145,33 @@ def post_ifttt_webhook(event, value):
     ifttt_event_url = IFTTT_WEBHOOKS_URL.format(event)
     requests.post(ifttt_event_url, json=data)
 ```
+
+###### Now Define main() fucntion to arrange all the above function and some conditions based on which our Applet works.
+
+First we need to use of Command line Parsing as we are using some command line customization for better flexibility.
+
+```
+import argparse
+```
+
+This argparser helps as to manage different command line arguments.
+
+###### Examples
+
+```
+parser = argparse.ArgumentParser(description='Bitcoin Notifier')
+parser.add_argument('-i', '--interval', type=float, nargs=1,
+                        metavar='interval', default=[0.3], help='Time Interval in Minuits.')
+
+parser.add_argument('-t', '--threshold', type=int, nargs=1,
+                        metavar='threshold', default=[10000], help='Threshold in USD')
+```
+
+Basic syntax for ArgumentPaser and .add_argument is
+
+```
+ArgumentParser(prog=None, usage=None, description=None, epilog=None, parents=[], formatter_class=argparse.HelpFormatter, prefix_chars='-', fromfile_prefix_chars=None, argument_default=None, conflict_handler='error', add_help=True, allow_abbrev=True)
+
+ArgumentParser.add_argument(name or flags...[, action][, nargs][, const][, default][, type][, choices][, required][, help][, metavar][, dest])
+```
+You can Learn [Command Line Parsing](https://docs.python.org/3/library/argparse.html)
