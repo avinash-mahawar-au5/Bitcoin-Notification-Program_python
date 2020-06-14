@@ -103,4 +103,45 @@ In this project we are going to make below Applets
 5.Create an action.
 
 
+##### Now time to write code and connect all of them with  program code.
 
+Make a boiler plate like below
+
+```python
+import requests
+import time
+from datetime import datetime
+
+def main():
+    pass
+
+if __name__ == '__main__':
+    main()
+```
+
+Next, we have to make an appropriate fucntions to use Applets that we have make ablve.
+
+Add the below code above the main fucntion.
+
+```python
+IFTTT_WEBHOOKS_URL = 'https://maker.ifttt.com/trigger/{}/with/key/hhXkyPpLFoBWtHNmG0x8tEgXdf1PJSRWiQf40jG3Hk-'
+
+
+   # Extract the price from API response.
+   # See code for better understanding
+   # Example
+   
+def latest_bitcoin_price():
+  response = session.get(BITCOIN_API_URL, params=parameters)
+    data = json.loads(response.text)
+    data_float = float(data['data'][0]['quote']['USD']['price'])
+    return data_float
+    
+# Post function for posting request to IFTTT
+# Example
+
+def post_ifttt_webhook(event, value):
+    data = {'value1': value}
+    ifttt_event_url = IFTTT_WEBHOOKS_URL.format(event)
+    requests.post(ifttt_event_url, json=data)
+```
