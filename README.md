@@ -226,7 +226,7 @@ $ python bitcoin_notification_app.py
 # with extra parameters
 
 ```
-$ python bitcoin_notification_app.py --interval 0.3 --threshold 10000 --currenct USD
+$ python bitcoin_notification_app.py --interval 0.3 --threshold 10000 --currency USD
 ```
 
 ## Results
